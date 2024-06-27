@@ -1184,6 +1184,7 @@ color: black;
     width: 45vw;
     justify-content: space-evenly;
     text-align: center;
+    margin-bottom: 5vh;
 }
 
 #CardTrophy{
@@ -1203,7 +1204,7 @@ color: black;
 
 #CardDate{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    grid-template-columns: repeat(3, 1fr); /* Creates 4 equal columns */
     gap: 5px; /* Space between grid items */
 
 }
