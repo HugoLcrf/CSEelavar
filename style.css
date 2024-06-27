@@ -211,7 +211,7 @@ footer{
 }
 
 footer img{
-    width: 50vw;
+    width: 40vw;
 }
 
 #Premium{
@@ -228,7 +228,7 @@ footer img{
 }
 
 #SousSpons img{
-    width: 25vw;
+    width: 18vw;
 }
 
 @media screen and ( min-width: 767px){
