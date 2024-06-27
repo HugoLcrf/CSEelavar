@@ -231,11 +231,10 @@ footer img{
     width: 18vw;
 }
 
-@media screen and ( min-width: 767px){
+@media screen and ( min-width: 667px){
     
     footer{
         height: 90vh;
-        margin-top: 5vh;
         background: rgb(255,255,255);
         background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 100%);
         background-size: cover;
