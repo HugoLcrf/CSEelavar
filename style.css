@@ -1,0 +1,1361 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;  /* Pour Chrome, Safari et Opera */
+  }
+
+section{
+    width: 100%;
+    margin: 0;
+}
+
+#accueil section{
+    padding-bottom: 3vh;
+}
+
+
+/*  Header */
+
+header{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    z-index: 4;
+}
+
+#navbarMob{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+#navbarPC{
+    display: none;
+}
+
+#navcat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+#logo{
+    height: 10vh;
+}
+
+@media screen and ( min-width: 767px){
+    header{
+        bottom: unset;
+        background-color: unset;
+    }
+
+    #navbarMob{
+        display: none;
+    }
+
+    #navbarPC{
+        display: flex;
+        justify-content: center;
+    }
+
+    #navbarcontent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        height: 10vh;
+    }
+
+    #LeftNavbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 35vw;
+    }
+
+    #RightNavbar{
+        width: 15vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #RightNavbar a{
+        text-decoration: none;
+    }
+
+    #logo{
+        height: 8vh;
+        margin-top: 2vh;
+        padding-bottom: 1vh;
+        border-bottom: 3px solid #BD965C;
+    }
+
+    .navbar-scrolled {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+}
+
+@media screen and ( max-width: 1024px){
+    #LeftNavbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50vw;
+    }
+}
+
+/*POPUP MENU*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100%;
+    background-color: black;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.popup.open {
+    right: 0;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #BD965C;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px ;
+}
+
+#popup a {
+    text-decoration: none;
+    color: white;
+}
+
+#headerPop{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#headerPop a {
+    height: 4vh;
+}
+
+#contentPop{
+    margin-top: 5vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and ( min-width: 767px){
+    .popup {
+        position: fixed;
+        top: 0;
+        right: -30%;
+        width: 30%;
+}
+
+.close-btn{
+    width: 3vw;
+    font-size: 35px;
+}
+}
+
+/*Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    background: unset;
+    color: white;
+}
+
+footer img{
+    width: 50vw;
+}
+
+#Premium{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#SousSpons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#SousSpons img{
+    width: 25vw;
+}
+
+@media screen and ( min-width: 767px){
+    
+    footer{
+        height: 90vh;
+        margin-top: 5vh;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 100%);
+        background-size: cover;
+        color: black;
+        justify-content: center;
+    }
+
+    footer h2{
+        margin-top: 0;
+    }
+
+    footer img{
+        width: 20vw;
+    }
+
+    #SousSpons{
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #SousSpons img{
+        width: 12vw;
+        height: 13vh;
+    }
+}
+
+/*Accueil*/
+
+#news1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: 
+    radial-gradient(174.78% 84.88% at 32.5% 0, rgba(0, 0, 0, 0.5) 0, transparent 100%), 
+    radial-gradient(at 50% 10%, transparent, rgba(0, 0, 0, 0.5)), 
+    url(img/Senior.jpg);
+    background-position: center;
+    height:100% ;
+    width: 100%;
+}
+#news2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: 
+    radial-gradient(174.78% 84.88% at 32.5% 0, rgba(0, 0, 0, 0.5) 0, transparent 100%), 
+    radial-gradient(at 50% 10%, transparent, rgba(0, 0, 0, 0.5)), 
+    url(img/Feminine.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100% ;
+    width: 100%;
+}
+#news3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: 
+    radial-gradient(174.78% 84.88% at 32.5% 0, rgba(0, 0, 0, 0.5) 0, transparent 100%), 
+    radial-gradient(at 50% 10%, transparent, rgba(0, 0, 0, 0.5)), 
+    url(img/Plus35.jpeg);
+    background-position: center;
+    height:100% ;
+    width: 100%;
+}
+
+#TXTcarou{
+    margin-left: 3vw;
+    padding: 0 6.5%;
+    z-index: 5;
+}
+
+.carousel__item h1{
+    line-height: 140%;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2.5rem;
+}
+.carousel__item a{
+    text-decoration: none;
+
+}
+
+.carousel__item p{
+    color: #BD965C;
+}
+
+#banniere{
+    display: flex;
+    justify-content: center;
+
+}
+
+#banniere img{
+    width: auto;
+    height: 10vh;
+}
+
+@media screen and ( min-width: 767px){
+    #news1,#news2,#news3{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        background-size: cover;
+        justify-content: center;
+    }
+
+    #TXTcarou{
+        font-size: 2rem;
+        padding: 0px 10%;        ;
+    }
+
+    body{
+        margin: 0;
+    }
+}
+
+/* Resultat*/
+
+
+.block-head__body {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.label {
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding:.0rem .2rem 0;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    background-color: #bd965c;
+    height: 2.2rem;
+}
+
+.label.size-secondary {
+    font-size: 1rem;
+    height: 2.5rem;
+}
+
+.label span {
+    color: black;
+    margin-left: .5rem;
+}
+
+.block-head__right {
+    margin-left: auto;
+}
+
+.block-link {
+    display: flex;
+    align-items: center;
+}
+
+a, button, input, select, textarea {
+    color: #bd965c;
+    outline: none;
+}
+
+@media screen and ( min-width: 767px){
+
+.block-head__body {
+    display: flex;
+    align-items: center;
+    margin-right: 10vw;
+    margin-left: 10vw;  }
+}
+
+/* Articles*/
+
+#Articles {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5rem;
+    border-top: 1px solid #d1d3d4;
+    font-weight: 300;
+}
+
+#Article-item, #Article-itemPC{
+    display: flex;
+    padding-bottom: 3.5rem;
+        margin-bottom: 3.5rem;
+        border-bottom: 1px solid #d1d3d4;
+}
+
+.article-item__title{
+    font-size: 1.2rem;
+    line-height: 140%;
+    margin-bottom: 4%;
+}
+
+#Articles a {
+    display: flex;
+    text-decoration: none;
+}
+
+#Article-img {
+    display: flex;
+    max-width: 8rem;
+    height: auto;
+    margin-right: 7%;
+}
+
+#Articles img {
+    display: block;
+    width: 100%;
+}
+
+#Article-Content p{
+    color: #585858;
+}
+
+#Articles-Left{
+    display: none;
+}
+
+@media screen and ( min-width: 767px){
+
+    #Articles{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #d1d3d4;
+        margin-left: 10vw;
+    margin-right: 10vw;
+    }
+
+    #Articles-Left{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2vw;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+   #Article-itemPC{
+        border: unset;
+        margin: 0;
+    }
+
+
+
+    #Articles-bottom{
+        display: flex;
+    }
+
+    #Articles-bottom #Article-itemPC {
+        width: 50%;
+    }
+
+    #Article-itemPC a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Article-itemPC #Article-img{
+        max-width: 100%;
+        margin-right: unset;
+    }
+
+    #Article-Content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+    }
+    
+    #Article-item:last-child{
+        border: unset;
+        margin-bottom: 0;
+    }
+
+    #Article-img {
+        max-width: 30%;
+    }
+
+    #Articles-Right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+
+    }
+
+    #Articles-bottom #Article-itemPC #Article-img{
+        width: 90%;
+    }
+}
+
+
+/*Carousel*/
+
+
+  
+  #carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .media{
+    height: auto;
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 20px;
+    border: #BD965C 5px solid ;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+  }
+
+  #carousel-Content{
+    display: flex;
+    overflow: auto;
+
+  }
+  
+  
+  .item {
+    width: 48%;
+    height: auto;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    z-index: 3;
+    flex: 0 0 auto;
+    margin-right: 15px;
+    margin-left: 15px;
+    position: relative;
+  }
+  
+  .tags{
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+  
+  
+  .heading{
+    display: flex;
+  }
+  
+  .heading h1{
+    padding: 0.7rem;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    background-color: #bd965c;
+  }
+
+  button{
+    border: none;
+    background-color: transparent;
+  }
+
+  @media screen and ( min-width: 767px){
+
+    #carousel-Content{
+        overflow: unset;
+        justify-content: space-evenly;
+        margin-right: 10vw;
+    margin-left: 10vw;
+    }
+
+    .item{
+        width: 15%;
+    }
+    }
+
+
+
+
+
+
+  /*EQUIPE */ 
+
+  #team-card, #team-cardPC{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3vh;
+  }
+
+  #team-card img,#team-cardPC img{
+    width: 100%;
+  }
+
+  #team-cardPC{
+    display: none;
+}
+
+  .team-card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-card__content:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #bd965c;
+}
+
+.team-card-Title{
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    text-shadow: 0 0 50px hsla(0, 0%, 100%, .8);
+}
+
+.team-card-Title{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 1vw;
+}
+
+.years{
+    width: fit-content;
+}
+
+@media screen and ( min-width: 767px){
+#team-cardPC{
+    display: unset;
+}
+
+#team-group{
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: space-between;
+
+}
+
+#team-card, #team-cardPC{
+    margin: 1vw;
+    width: 30%;
+}
+}
+
+
+/* Palmares*/
+
+#Palma{
+    margin: 0;
+}
+
+#Palmares{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+}
+
+
+
+.trophies-hero, .trophies-heroPC {  
+    width: 80vw;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: radial-gradient(141.94% 100.48% at 50% 100%, #0d1321 0, rgba(13, 19, 33, 0) 100%), url(img/Palmares.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+.trophies-heroPC{
+    display: none;
+}
+
+.trophies-hero h3, .trophies-heroPC h3{
+    font-size: 1.2rem;
+    padding: 1vw;
+}
+
+.trophies-card__title{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #fff;
+}
+
+.trophies-card__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trophies-card__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 2rem;
+    min-width: 8rem;
+    border: 1px solid #bd965c;
+    color: #bd965c;
+    text-decoration: none;
+}
+
+@media screen and ( min-width: 767px){
+    .trophies-heroPC{
+        display: flex;
+    }
+
+    #history{
+        width: 80vw;
+        display: flex;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        justify-content: space-between;
+    }
+
+    .trophies-hero, .trophies-heroPC {
+        width: 45%;
+        margin: 1vw;
+    }
+    .trophies-heroPC {
+    background-image: radial-gradient(141.94% 100.48% at 50% 100%, #0d1321 0, rgba(13, 19, 33, 0) 100%), url(img/logo\ fete\ des\ iles.jpg);
+    }
+    }
+
+
+
+
+/* Page tournois */
+
+#Autre{
+    margin: 0;
+}
+
+#HeaderCup{
+    background: radial-gradient(circle, rgba(37,59,57,0) 0%, rgba(18,29,29,0.38561362044817926) 0%, rgba(2,3,5,0.7) 100%), url('img/backgroundCup.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3vh;
+    width: 100%;
+}
+
+
+#CupThree{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#CupThree img{
+    margin: 3vw;
+}
+
+#CupThree p:last-child{
+    color: white;
+    background-color: #bd965c;}
+
+#ContentCup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4vh;
+}
+
+#ContentCup p {
+    margin: 0;
+    color: #bd965c;
+}
+
+.barre {
+    width: 100%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+#barre{
+    width: 100%;
+    height: 3px;
+    display: flex;
+}
+
+.gauche {
+    background-color: #BD965C;
+    width: 30%;
+}
+.droite {
+    background-color: red;
+    width: 30%;
+}
+
+#Tournois, #Tournois2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#Tournois p:first-child, #Tournois2 p:first-child{
+    color: #bd965c;
+    margin-bottom: 0;
+}
+
+
+#Tournois span,#Tournois2 span{
+    color: #bd965c;
+}
+
+#Tournois a,#Tournois2 a {
+    display: flex;
+    margin: 5vh;
+    width: 40vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+#Tournois2 #Inscription{
+    margin: 0;
+    color: #fff;
+    background-color: #5AA1E3;
+    width: 25vw;
+}
+
+#CupTXT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#CupTXT p{
+    margin: 0;
+}
+
+#CupTXT strong{
+    font-size: 1.25rem;
+    margin: 4vw;
+}
+
+#footerCup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.5rem;
+    margin-top: 3.5rem;
+    border-top: 1px solid #d1d3d4;
+}
+
+#footerCup strong{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    font-size: 1.25rem;
+}
+
+#Sponsor{
+    background-image: url(img/LFS.png);
+    background-position: top;
+    background-size: cover;
+    height: 28vh;
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15vh;
+    margin-top: -10vh;
+}
+
+#Autre footer, #Histoire footer{
+    height: 80vh;
+    background: radial-gradient(circle, rgba(37,59,57,0) 0%, rgba(18,29,29,0.38561362044817926) 0%, rgba(2,3,5,0.7) 100%), url('img/backgroundCup.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    color: #fff;
+}
+
+@media screen and ( min-width: 767px){
+
+    #CupThree p:last-child{
+        color: white;
+    }
+
+    #HeaderCup{
+        padding-top: 10vh;
+    }
+
+    #AllTournois{
+        display: flex;
+    }
+
+    #Tournois a,#Tournois2 a {
+        display: flex;
+        margin: 5vh;
+        width: 20vw;
+        height: 5vh;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        border-radius: 5px;
+    }
+
+    #Tournois, #Tournois2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    #SectionTournois{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footerCup{
+        width: 70vw;
+    }
+
+}
+
+/*Page actu*/
+
+#SectionActu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#AllActu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Actu{
+    width: 80%;
+    height: 60vh;
+    background-color: #fff;
+    color: black;
+    margin-top: 5vh;
+}
+
+#actudate h3{
+    margin-bottom: 0;
+    margin-top: 1vh;
+    font-size: 1.65rem;
+}
+
+#actudate p{
+    margin-top: 0;
+}
+
+#Actu img{
+    width: 100%;
+    height: 60%;
+
+}
+
+#actudate{
+    width: 22%;
+    background-color: #BD965C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 7vh;
+    margin-left: 3vw;
+}
+
+#actuTXT{
+    margin: 2vw;
+    position: relative;
+    bottom: 5vh;
+}
+
+#actuTXT a {
+    text-decoration: none;
+}
+
+
+
+@media screen and ( min-width: 767px){
+    #AllActu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: 10vw;
+        margin-left: 10vw;
+        justify-items: center;
+    }
+
+    #Actu{
+        height: 75vh;
+    }
+}
+
+
+/*Page histoire */
+#SectionHistoire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Histoire{
+    margin: 0;
+    background-color: #fff;
+}
+
+#DivHistoire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4vh;
+}
+
+#Histoire #DivHistoire{
+    width: 80%;
+color: black;
+}
+
+#Histoire #DivHistoire .barre{ 
+    margin-bottom: 3vh;
+}
+
+#Histoire #DivHistoire p{
+    color: #555555;
+    font-weight: 300;
+    margin-top: 2vh;
+    }
+
+#contentHistoire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Palmares */
+
+
+#HeaderClub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ClubNav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #BD965C;
+}
+
+#ClubNav a {
+    color: white;
+    text-decoration: none;
+    border-left: solid 1px white;
+    padding-left: 6vw;
+}
+
+#ClubNav p:last-child{
+    color: black;
+    margin: 0;
+    font-weight: 600;
+}
+
+#buttonClub{
+    background-color: #fff;
+    display: flex;
+    height: 3vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 25vw;
+}
+
+#NavTXTclub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+#txtnavclub{
+    width: 80%;
+}
+
+#PalmaresSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#CardPalm{
+    color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    width: 45vw;
+    justify-content: space-evenly;
+}
+
+#CardTrophy{
+    display: flex;
+}
+
+#CardTrophy p{
+    font-size: 5rem;
+    color: #D1D3D4;
+    margin: 0;
+}
+
+#CardTrophy img{
+    height: 10vh;
+
+}
+
+#CardDate{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 5px; /* Space between grid items */
+
+}
+
+#allcard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+}
+
+@media screen and ( min-width: 767px){
+    #allcard{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 2 columns */
+        gap: 20px;
+    }
+
+    #CardPalm{
+        color: black;
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60vh;
+        width: 20vw;
+        justify-content: space-evenly;
+    }
+
+    #CardTrophy{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #CardTrophy p {
+        margin-bottom: 5vh;
+    }
+
+    #txtnavclub{
+        width: 40%;
+    }
+
+    #NavTXTclub h1{
+        font-size: 3rem;
+    }
+
+    #HeaderClub{
+        padding-top: 8vw;
+    }
+
+    #ClubNav{
+        background-color: unset;
+        border-bottom: 2px solid grey;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        width: 80%;
+    }
+
+    #buttonClub{
+        width: 10vw;
+        height: 5vh;
+        background-color: #BD965C;
+        color: white;
+    }
+
+    #ClubNav p:last-child{
+        color: white;
+        margin: 0;
+        font-weight: 600;
+    }
+}
+
+
+
+/* Accordeon*/ 
+.accordion-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.4rem;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #f1f1f1;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+}
+
+.accordion-button:hover {
+    background-color: #f1f1f1;
+
+}
+
+.accordion-content {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding-bottom: 2.5rem;
+}
+
+.accordion-content p {
+    margin: 10px 0;
+    color: #585858;
+    font-size: 1rem;
+}
+/* Engagement*/
+
+#txtnavclub img{
+    width: 100%;
+}
+
+#EngaMarg{
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#EngagementTXT {
+    font-size: 1.1rem;
+    display: flex;
+}
+
+#EngagementTXT p {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#EngagementTXT em{
+    color: #838383;
+}
+
+#ButtEnga{
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#EngagementButt {
+    color: #fff;
+    background-color: #bd965c;
+    border: 1px solid #bd965c;
+    padding: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+}
+
+@media screen and ( min-width: 767px){
+    #EngaMarg{
+        width: 50%;
+        display: flex;
+    }
+
+    #EngagementTXT{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1400px) {
+    #HeaderClub{
+        padding-top: 12vh;
+    }
+}

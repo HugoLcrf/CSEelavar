@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Eelavar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/Icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Icon/favicon-16x16.png">
+    <script src="index.js" defer></script>
+</head>
+<body id="accueil">
+        <header>
+            <div id="navbarMob">
+                <div>
+                    <a href="Histoire.html"  id="navcat">
+                        <img src="img/Icon/club.png" alt="">
+                        <p>Club</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="Actu.html" id="navcat">
+                        <img src="img/Icon/Actualite.png" alt="">
+                        <p>Actualités</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="index.html" >
+                        <img src="img/Logo.png" alt="" id="logo">
+                    </a>
+                </div>
+                <div>
+                    <a href="tournois.html" id="navcat">
+                        <img src="img/Icon/Cup.png" alt="">
+                        <p>Tournois</p>
+                    </a>
+                </div>
+                <div>
+                    <a id="navcat" onclick="openPopup()">
+                        <img src="img/Icon/More.png" alt="">
+                        <p>Menu</p>
+                    </a>
+                </div>
+            </div>
+    
+            <div id="navbarPC">
+                <div id="navbarcontent">
+                    <div id="LeftNavbar">
+                        <div>
+                            <a href="#" id="navcat" onclick="openPopup()">
+                                <img src="img/Icon/More.png" alt="">
+                            </a>
+                        </div>
+                    
+                        <div>
+                            <a href="index.html" >
+                                <img src="img/Logo.png" alt="" id="logo">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="Histoire.html"  id="navcat">
+                                Club
+                            </a>
+                        </div>
+                        <div>
+                            <a href="Actu.html" id="navcat">
+                                Actualités
+                            </a>
+                        </div>
+                        <div>
+                            <a href="tournois.html" id="navcat">
+                                Tournois
+                            </a>
+                        </div>
+                    </div>
+                    <div id="RightNavbar">
+                        <a target="_blank" href="https://x.com/CSEelavar">
+                            <img src="img/Icon/X.png" alt="">
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/EelavarOfficiel/">
+                            <img src="img/Icon/facebook.png" alt="">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/cseelavar/">
+                            <img src="img/Icon/insta.png" alt="">
+                        </a>
+                        <a target="_blank" href="https://www.tiktok.com/@cseelavar">
+                            <img src="img/Icon/tiktok.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+        </header>
+
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <img src="img/Logo.png" alt="">
+                <div id="headerPop">
+                    <a href="Engagement.html">Engagement</a>
+                    <a href="palmares.html">Palmares</a>
+                    <!-- <a href=""> Boutique</a> -->
+                    <h2>Contact Info</h2>
+                    <div id="barre">
+                        <div class="gauche"></div>
+                    </div>
+                </div>
+                    <p>✉️ <a href="mailto:cseelavar@gmail.com">cseelavar@gmail.com</a>  </p>
+                    <div id="contentPop">
+                    <a target="_blank" href="https://x.com/CSEelavar">
+                        <img src="img/Icon/X.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/EelavarOfficiel/">
+                        <img src="img/Icon/facebook.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/cseelavar/">
+                        <img src="img/Icon/insta.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.tiktok.com/@cseelavar">
+                        <img src="img/Icon/tiktok.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    <section id="carousel">
+
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" id="carousel-1" name="carousel[]" checked>
+                <input type="radio" id="carousel-2" name="carousel[]">
+             <input type="radio" id="carousel-3" name="carousel[]">
+                <input type="radio" id="carousel-4" name="carousel[]">
+                <input type="radio" id="carousel-5" name="carousel[]">
+
+                <ul class="carousel__items">
+                    <li class="carousel__item">
+                        <div id="news1">
+                            <a href="Actu.html" id="TXTcarou">
+                                <h1>L’équipe senior masculine a remporté le Tamileelam Maveerar World Cup !</h1>
+                                <p>Seniors</p>
+                            </a>
+                        </div>
+                    <li class="carousel__item">
+                        <div id="news2">
+                        <a href="Actu.html" id="TXTcarou">
+                            <h1>Eelavar Cup 2024 - équipe féminine 3e du tournoi. </h1>
+                            <p>Feminine</p>
+                        </a>
+                    </div></li>
+                    <li class="carousel__item">
+                        <div id="news3">
+                        <a href="Actu.html" id="TXTcarou">
+                            <h1>L’équipe +35 ans reussit l'exploit et gagne la Maveerar Cup</h1>
+                            <p>Plus de 35ans</p>
+                        </a>
+                    </div></li>
+                </ul>
+             <div class="carousel__prev">
+                 <label for="carousel-1"></label>
+                 <label for="carousel-2"></label>
+                 <label for="carousel-3"></label>
+             </div>
+             <div class="carousel__next">
+               <label for="carousel-1"></label>
+               <label for="carousel-2"></label>
+               <label for="carousel-3"></label>
+             </div>
+           </div>
+         </div>        
+    </section>
+
+    <section>
+        <div id="banniere">
+            <img src="img/Bannier.png" alt="">
+        </div>
+    </section>
+
+<!-- <section class="Resultat">
+    <div class="block-head container">
+        <div class="block-head__body">
+            <div class="block-head__left">
+                <h2 class="label size-secondary">Classement <span>PROS</span></h2>
+            </div>
+            <div class="block-head__right"><a class="block-link " href="/fr/team/equipe-pro/standings"><span class="block-link__text">Complet</span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.66062 5.65855H7.74563L4.5218 8.87224C4.26416 9.12908 4.26416 9.55054 4.5218 9.80738C4.77945 10.0642 5.19564 10.0642 5.45328 9.80738L9.80677 5.46757C10.0644 5.21073 10.0644 4.79585 9.80677 4.53902L5.45989 0.192624C5.20224 -0.0642081 4.78605 -0.0642081 4.52841 0.192624C4.27077 0.449457 4.27077 0.86434 4.52841 1.12117L7.74563 4.34146H0.66062C0.297279 4.34146 0 4.6378 0 5C0 5.3622 0.297279 5.65855 0.66062 5.65855Z" fill="#BD965C"></path></svg></a>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<section>
+    <div class="block-head container">
+        <div class="block-head__body">
+            <div class="block-head__left">
+                <h2 class="label size-secondary">DERNIERES ACTUALITES</h2>
+            </div>
+            <div class="block-head__right"><a class="block-link " href="Actu.html"><span class="block-link__text">Toutes les actus</span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.66062 5.65855H7.74563L4.5218 8.87224C4.26416 9.12908 4.26416 9.55054 4.5218 9.80738C4.77945 10.0642 5.19564 10.0642 5.45328 9.80738L9.80677 5.46757C10.0644 5.21073 10.0644 4.79585 9.80677 4.53902L5.45989 0.192624C5.20224 -0.0642081 4.78605 -0.0642081 4.52841 0.192624C4.27077 0.449457 4.27077 0.86434 4.52841 1.12117L7.74563 4.34146H0.66062C0.297279 4.34146 0 4.6378 0 5C0 5.3622 0.297279 5.65855 0.66062 5.65855Z" fill="#BD965C"></path></svg></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="Articles">
+        <div id="Articles-Left">
+            <div id="Article-itemPC">
+                <a href="News4.html">
+                    <div id="Article-img"><img src="img/Plus35.jpeg" alt="">
+                    </div>
+                    <div id="Article-Content">
+                        <h2 class="article-item__title">Nous sommes champions de la Maveerar Cup +35 ans</h2>
+                        <p>+ 35ans</p>
+                    </div>
+                </a>
+            </div>
+            <div id="Articles-bottom">
+                <div id="Article-itemPC">
+                    <a href="News5.html">
+                        <div id="Article-img"><img src="img/Stovner.jpeg" alt="">
+                        </div>
+                        <div id="Article-Content">
+                            <h2 class="article-item__title">Competition en Norvège</h2>
+                            <p>Club</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="Article-itemPC">
+                    <a href="News6.html">
+                        <div id="Article-img"><img src="img/Inscription.png" alt="">
+                        </div>
+                        <div id="Article-Content">
+                            <h2 class="article-item__title">Inscriptions – saison 2024/2025</h2>
+                            <p>Club</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="Articles-Right">
+            <div id="Article-item">
+                <a href="News1.html">
+                    <div id="Article-img"><img src="img/Maraton.jpeg" alt="">
+                    </div>
+                    <div id="Article-Content">
+                        <h2 class="article-item__title">Nous organisons la Maveerar Cup athlétisme 2024</h2>
+                        <p>athlétisme</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div id="Article-item">
+                <a href="News2.html">
+                    <div id="Article-img"><img src="img/MerciEelavar.jpeg" alt="">
+                    </div>
+                    <div id="Article-Content">
+                        <h2 class="article-item__title">Merci à tous les clubs qui ont participé à notre tournoi ! 💛🖤</h2>
+                        <p>Eelavar Cup</p>
+                    </div>
+                </a>
+            </div>
+            <div id="Article-item">
+                <a href="News3.html">
+                    <div id="Article-img"><img src="img/Senior.jpg" alt="">
+                    </div>
+                    <div id="Article-Content">
+                        <h2 class="article-item__title">L’équipe senior masculine a remporté le Tamileelam Maveerar World Cup !</h2>
+                        <p>Seniors</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div id="banniere">
+        <img src="img/Bannier.png" alt="">
+    </div>
+</section>
+
+<!-- <section id="carousel">
+    <div class="block-head container">
+        <div class="block-head__body">
+            <div class="block-head__left">
+                <h2 class="label size-secondary">LA BOUTIQUE</h2>
+            </div>
+            <div class="block-head__right"><a class="block-link " href="/fr/team/equipe-pro/standings"><span class="block-link__text">Tous les produits </span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.66062 5.65855H7.74563L4.5218 8.87224C4.26416 9.12908 4.26416 9.55054 4.5218 9.80738C4.77945 10.0642 5.19564 10.0642 5.45328 9.80738L9.80677 5.46757C10.0644 5.21073 10.0644 4.79585 9.80677 4.53902L5.45989 0.192624C5.20224 -0.0642081 4.78605 -0.0642081 4.52841 0.192624C4.27077 0.449457 4.27077 0.86434 4.52841 1.12117L7.74563 4.34146H0.66062C0.297279 4.34146 0 4.6378 0 5C0 5.3622 0.297279 5.65855 0.66062 5.65855Z" fill="#BD965C"></path></svg></a>
+            </div>
+        </div>
+    </div>
+
+      <div id="carousel-Content">
+          <button class="item">
+            <img class="media" src="Img/PoloEelavar.jpg">
+              <div class="heading">
+                <h1>80.00 €</h1>
+            </div>
+              <div class="tags">
+                Polo Interieur Hommes 23/24
+              </div>
+          </button>
+          <button class="item">
+            <img class="media" src="Img/Caouai.jpeg">
+            <div class="heading">
+                  <h1>80.00 €</h1>
+              </div>
+              <div class="tags">
+                Polo Interieur Hommes 23/24
+              </div>
+          </button>
+          <button class="item">
+            <img class="media" src="Img/PoloEelavar.jpg">
+            <div class="heading">
+                  <h1>80.00 €</h1>
+              </div>
+              <div class="tags">
+                Polo Interieur Hommes 23/24
+              </div>
+          </button>
+          <button class="item">
+            <img class="media" src="Img/PoloEelavar.jpg">
+            <div class="heading">
+                  <h1>80.00 €</h1>
+              </div>
+              <div class="tags">
+                Polo Interieur Hommes 23/24
+              </div>
+          </button>
+          
+          <button class="item">
+            <img class="media" src="Img/PoloEelavar.jpg">
+            <div class="heading">
+                  <h1>80.00 €</h1>
+              </div>
+              <div class="tags">
+                Polo Interieur Hommes 23/24
+              </div>
+          </button>
+      </div>
+    </section> -->
+
+    <!-- <section id="Equipe">
+        <div class="block-head container">
+            <div class="block-head__body">
+                <div class="block-head__left">
+                    <h2 class="label size-secondary">Equipes</h2>
+                </div>
+            </div>
+        </div>
+<div id="team-group">   
+            <div id="team-card">
+                <a href="">
+                    <img src="img/EquipeSenior.jpg" alt="">
+                    <div class="team-card__content">
+                        <h2 class="team-card-Title">Seniors</h2>
+                        <h3 class="team-card-Title years">2024-2025
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            <div id="team-card">
+                <a href="">
+                    <img src="img/Feminine.jpg" alt="">
+                    <div class="team-card__content">
+                        <h2 class="team-card-Title">Feminine</h2>
+                        <h3 class="team-card-Title years">2024-2025
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            <div id="team-cardPC">
+                <a href="">
+                    <img src="img/Icon/jeunes.jpeg" alt="">
+                    <div class="team-card__content">
+                        <h2 class="team-card-Title">Jeunes</h2>
+                        <h3 class="team-card-Title years">2024-2025
+                        </h3>
+                    </div>
+                </a>
+            </div>
+</div>
+    </section> -->
+
+    <section id="Palmares">
+        <div id="history">
+            <div class="trophies-hero">
+                <h3 class="label">palmarès</h3>
+                <div class="trophies-card__content"><p class="trophies-card__title">Notre palmarès</p><a class="trophies-card__button" href="palmares.html">Découvrir<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.53244 0.266514L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73826 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73348L0.261745 1.55125C-0.0872479 1.1959 -0.0872479 0.621867 0.261745 0.266514C0.610739 -0.0797271 1.18344 -0.0888386 1.53244 0.266514Z" fill="#0D1321"></path></svg></a></div>
+            </div>
+            <div class="trophies-heroPC">
+                <h3></h3>
+                <div class="trophies-card__content"><p class="trophies-card__title">Un programme engagé</p><a class="trophies-card__button" href="Engagement.html">Découvrir<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.53244 0.266514L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73826 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73348L0.261745 1.55125C-0.0872479 1.1959 -0.0872479 0.621867 0.261745 0.266514C0.610739 -0.0797271 1.18344 -0.0888386 1.53244 0.266514Z" fill="#0D1321"></path></svg></a></div>
+            </div>
+        </div>
+      
+    </section>
+
+
+
+        <footer>
+            <h2>Nos partenaires</h2>
+            <h3>Partenaires Majeurs</h3>
+            <img src="img/Mayilan.png" alt="">
+            <div id="Premium">
+                <h3>Partenaires Premium</h3>
+                <div id="SousSpons">
+                    <img src="img/2T2P.png" alt="">
+                    <img src="img/ISB.jpeg" alt="">
+                    <img src="img/SASTDP.png" alt="">
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    
+    
+</body>
+</html>
